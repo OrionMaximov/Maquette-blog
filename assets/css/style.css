@@ -11,7 +11,13 @@ header{
     flex-direction: column;
     align-items: center;
 }
-
+#last{
+    display: none;
+}
+#reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
 .card{margin-bottom: .5rem;
     border-radius: none;
 }
@@ -89,3 +95,32 @@ footer button:disabled{
     border: 1px black solid;
 }
 /*responsive tablette*/
+@media screen and (min-width:972px) {
+    #last{
+        display: none;
+    }
+    #reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #table{
+        
+        display: flex;
+        flex-direction: row;
+    }
+    @media screen and (min-width:576px) {
+        #last{
+            display: flex;
+            flex-direction: column;
+        }
+        #reverse{
+            display: flex;
+            flex-direction: row;
+        }
+        #table{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+}
